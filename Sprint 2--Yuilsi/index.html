@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <header class="header">
+    </header>
+    
+    <form class="form" id="form">
+     
+        <input class="form__file"type="file" id="csvFile" accept=".csv"/> <!--Seleccionar el archivo-->
+        <br/><!--Salto de linea-->
+        <input class="form__submit"type="submit" value="Subir archivo"> <!--Subir archivo-->
+    </form>
+
+    <table class="dataTable">    
+        
+        <thead id="titles">
+            <tr>
+                <th id="Nombre">Nombre</th>
+                <th id="DMI">DMI 0-1</th>
+                <th id="Hamburguesa">Hamburguesa 0-1</th>
+                <th id="Helado">Helado 0-1</th>
+                <th id="Videojuego">Videojuegos 0-1</th>
+                <th id="Feliz">Felicidad 0-1</th>
+            </tr>
+        </thead>
+        <tbody id="showData"></tbody>
+    </table>
+
+   
+    <p class="calculate">1.Selecciona dos nombres y dele click al boton para ver su similitud</p></br>
+    <p id="result">Resultado</p>
+    <select id="person1"></select>
+    <select id="person2"></select>
+    <button id="compare">Comparar</button>
+    
+</body>
+
+<script src="index.js"></script>
+</html>
